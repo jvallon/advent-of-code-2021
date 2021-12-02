@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
-// using Utilities;
-// using Day01;
 
 namespace aoc_2021
 {
@@ -21,6 +19,15 @@ namespace aoc_2021
                         Console.WriteLine("Calculating increase");
                         Console.WriteLine($"P1: {Day01.CountDepthIncreases(lines)} depth increases");
                         System.Console.WriteLine($"P2: {Day01.CountDepthIncreasesWindow(lines)} window increases");
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine("Calculating position");
+                        var pos = Day02.GetPosition(lines);
+                        Console.WriteLine($"P1: {pos[0] * pos[1]} ");
+                        var posAim = Day02.GetPositionWithAim(lines);
+                        Console.WriteLine($"P1: {posAim[0] * posAim[1]} ");
                         break;
                     }
                 default:
