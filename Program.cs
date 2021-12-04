@@ -30,6 +30,14 @@ namespace aoc_2021
                         Console.WriteLine($"P1: {posAim[0] * posAim[1]} ");
                         break;
                     }
+                case 3:
+                    {
+                        Console.WriteLine("Calculating power consumption");
+                        var power = Day03.GetPowerConsumption(lines);
+                        Console.WriteLine($"P1: {power} ");
+                        System.Console.WriteLine($"P2: {Day03.GetOxygenRating(lines) * Day03.GetCO2Rating(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
