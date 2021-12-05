@@ -38,6 +38,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day03.GetOxygenRating(lines) * Day03.GetCO2Rating(lines)}");
                         break;
                     }
+                case 4:
+                    {
+                        Console.WriteLine("Playing bingo");
+                        System.Console.WriteLine($"P1: {Day04.GetFirstWinScore(lines)}");
+                        System.Console.WriteLine($"P2: {Day04.GetLastWinScore(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
