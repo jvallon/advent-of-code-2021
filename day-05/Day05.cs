@@ -83,40 +83,16 @@ namespace aoc_2021
                 var x2 = int.Parse(p2[0]);
                 var y2 = int.Parse(p2[1]);
 
-
-                if (x1 == x2)
+                grid[y2, x2]++;
+                while (x1 != x2 || y1 != y2)
                 {
-                    int lowerBound = y1 < y2 ? y1 : y2;
-                    int upperBound = y2 > y1 ? y2 : y1;
-                    for (int i = lowerBound; i <= upperBound; i++)
-                    {
-                        grid[i, x1]++;
-                    }
-                }
+                    grid[y1, x1]++;
 
-                else if (y1 == y2)
-                {
-                    int lowerBound = x1 < x2 ? x1 : x2;
-                    int upperBound = x2 > x1 ? x2 : x1;
-                    for (int i = lowerBound; i <= upperBound; i++)
-                    {
-                        grid[y1, i]++;
-                    }
-                }
-                else
-                {
-                    grid[y2, x2]++;
-                    while (x1 != x2 || y1 != y2)
-                    {
-                        grid[y1, x1]++;
-
-                        x1 = x1 < x2 ? x1 + 1 : x1 - 1;
-                        y1 = y1 < y2 ? y1 + 1 : y1 - 1;
-                    }
+                    x1 = x1 < x2 ? x1 + 1 : x1 > x2 ? x1 - 1 : x1;
+                    y1 = y1 < y2 ? y1 + 1 : y1 > y2 ? y1 - 1 : y1;
                 }
             }
 
-            PrintGrid(grid, 10);
             int count = 0;
             foreach (var p in grid)
             {
