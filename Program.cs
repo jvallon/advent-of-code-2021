@@ -45,6 +45,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day04.GetLastWinScore(lines)}");
                         break;
                     }
+                case 5:
+                    {
+                        Console.WriteLine("Day 5");
+                        System.Console.WriteLine($"P1: {Day05.GetOverlappingPointsHV(lines)} ");
+                        System.Console.WriteLine($"P2: {Day05.GetOverlappingPointsAll(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
