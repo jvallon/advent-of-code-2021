@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace aoc_2021
 {
@@ -12,6 +13,8 @@ namespace aoc_2021
             var lines = Utilities.GetInput(args[2]);
 
             System.Console.WriteLine($"Executing day {args[1]}");
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             switch (Convert.ToUInt16(args[1]))
             {
                 case 1:
@@ -52,12 +55,21 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day05.GetOverlappingPointsAll(lines)}");
                         break;
                     }
+                case 6:
+                    {
+                        System.Console.WriteLine("Day 6");
+                        System.Console.WriteLine($"P1: {Day06.RunGrowthSim(lines, 80)}");
+                        System.Console.WriteLine($"P2: {Day06.RunGrowthSimFast(lines, 256)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
                         break;
                     }
             }
+            stopwatch.Stop();
+            System.Console.WriteLine($"Executed in {stopwatch.Elapsed}");
         }
     }
 }
