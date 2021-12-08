@@ -71,6 +71,12 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day07.FuelCalcExpo(lines)}");
                         break;
                     }
+                case 8:
+                    {
+                        System.Console.WriteLine("Day 8");
+                        System.Console.WriteLine($"P1: {Day08.CountDigits(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");

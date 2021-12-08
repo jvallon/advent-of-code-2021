@@ -10,5 +10,21 @@ namespace aoc_2021
         {
             return File.ReadAllLines(path);
         }
+        public static void PrintArray(int[] arr)
+        {
+            foreach (var i in arr)
+            {
+                System.Console.Write(i + ",");
+            }
+            System.Console.WriteLine();
+        }
+        public static void PrintArray(string[] arr)
+        {
+            foreach (var i in arr)
+            {
+                System.Console.Write(i + ",");
+            }
+            System.Console.WriteLine();
+        }
     }
 }
