@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace aoc_2021
 {
@@ -60,6 +61,14 @@ namespace aoc_2021
                         System.Console.WriteLine("Day 6");
                         System.Console.WriteLine($"P1: {Day06.RunGrowthSim(lines, 80)}");
                         System.Console.WriteLine($"P2: {Day06.RunGrowthSimFast(lines, 256)}");
+                        break;
+                    }
+                case 7:
+                    {
+                        // var data = lines[0].Split(',');
+                        System.Console.WriteLine("Day 7");
+                        System.Console.WriteLine($"P1: {Day07.FuelCalc(lines)}");
+                        System.Console.WriteLine($"P2: {Day07.FuelCalcExpo(lines)}");
                         break;
                     }
                 default:
