@@ -77,6 +77,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P1: {Day08.CountDigits(lines)}");
                         break;
                     }
+                case 9:
+                    {
+                        System.Console.WriteLine("Day 9");
+                        System.Console.WriteLine($"P1: {Day09.SumRisk(lines)}");
+                        System.Console.WriteLine($"P2: {Day09.GetBasins(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
