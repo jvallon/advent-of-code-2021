@@ -84,6 +84,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day09.GetBasins(lines)}");
                         break;
                     }
+                case 10:
+                    {
+                        System.Console.WriteLine("Day 10");
+                        System.Console.WriteLine($"P1: {Day10.GetSyntaxScore(lines)}");
+                        System.Console.WriteLine($"P2: {Day10.GetCompletionScore(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");

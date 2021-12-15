@@ -53,6 +53,7 @@ namespace aoc_2021
 
         /*
         7 - 1 reveals a
+        
         0 - 8 reveals d
         8 - 6 reveals c
         8 - 9 revelas e
@@ -61,7 +62,7 @@ namespace aoc_2021
 
         public static int SumOutputs(string[] data)
         {
-
+            return 0;
         }
     }
 }
