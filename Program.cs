@@ -98,6 +98,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day11.GetSyncPulse(lines)}");
                         break;
                     }
+                case 14:
+                    {
+                        System.Console.WriteLine("Day 14");
+                        System.Console.WriteLine($"P1: {Day14.GetPolymerCount(lines, 10)}");
+                        System.Console.WriteLine($"P2: {Day14.GetPolymerCountBetter(lines, 40)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
