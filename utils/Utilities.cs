@@ -18,6 +18,17 @@ namespace aoc_2021
             }
             System.Console.WriteLine();
         }
+        public static void PrintGrid(int[][] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; j < arr[i].Length; j++)
+                {
+                    System.Console.Write(arr[i][j] + ",");
+                }
+                System.Console.WriteLine();
+            }
+        }
         public static void PrintArray(string[] arr)
         {
             foreach (var i in arr)
@@ -25,6 +36,16 @@ namespace aoc_2021
                 System.Console.Write(i + ",");
             }
             System.Console.WriteLine();
+        }
+
+        public static int[][] GetGrid(string[] data)
+        {
+            var grid = new int[data.Length][];
+            for (int i = 0; i < data.Length; i++)
+            {
+                grid[i] = Array.ConvertAll(data[i].ToCharArray(), c => int.Parse(c.ToString()));
+            }
+            return grid;
         }
     }
 }

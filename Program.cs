@@ -91,6 +91,13 @@ namespace aoc_2021
                         System.Console.WriteLine($"P2: {Day10.GetCompletionScore(lines)}");
                         break;
                     }
+                case 11:
+                    {
+                        System.Console.WriteLine("Day 11");
+                        System.Console.WriteLine($"P1: {Day11.GetFlashCount(lines, 100)}");
+                        System.Console.WriteLine($"P2: {Day11.GetSyncPulse(lines)}");
+                        break;
+                    }
                 default:
                     {
                         System.Console.WriteLine("Invalid day");
